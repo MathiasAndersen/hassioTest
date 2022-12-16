@@ -1,0 +1,23 @@
+{
+  "name": "SONOS AudioClip TTS",
+  "version": "2.0.3",
+  "slug": "sonos_audioclip_tts",
+  "description": "Implements the best current tts solution on SONOS using built in audioClip support.",
+  "url":"https://github.com/MathiasAndersen/hassio-addons/tree/master/sonos-audioclip-tts",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "before",
+  "boot": "auto",
+  "options": {
+    "SONOS_CLIENT_ID":"",
+    "SONOS_CLIENT_SECRET":"",
+    "GOOGLE_TTS_LANGUAGE":"en-US"
+  },
+  "schema": {
+    "SONOS_CLIENT_ID": "str",
+    "SONOS_CLIENT_SECRET": "str",
+    "GOOGLE_TTS_LANGUAGE": "str"
+  },
+  "ports": {
+     "8349/tcp": 8349
+   }
+}
